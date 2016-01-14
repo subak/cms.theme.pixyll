@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <?= $this->tag('title', join(' | ', $this->context('title', true))) ?>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <?= $this->tag('meta', ['name'=>'description','content'=>$this->meta('description')]) ?>
-  <?= $this->tag('meta', ['name'=>'author','content'=>$this->meta('author')]) ?>
+  <?= $this->tag('meta', ['name'=>'description','content'=>$this->context('description')]) ?>
+  <?= $this->tag('meta', ['name'=>'author','content'=>$this->context('author')]) ?>
 
   <?= $this->tag('link', ['res'=>'canonical','href'=>$this->context('uri')]) ?>
 
@@ -35,7 +35,7 @@
   <header class="site-header px2 px-responsive">
     <div class="mt2 wrap">
       <div class="measure">
-        <?= $this->link_to($this->site_name(), '/', ['class' => 'site-title']) ?>
+        <?= $this->link_to($this->context('title', 'content'), '/', ['class' => 'site-title']) ?>
 
         <div class="clearfix"></div>
       </div>
