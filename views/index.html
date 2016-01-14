@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <?= $this->tag('title', $this->title()) ?>
+  <?= $this->tag('title', join(' | ', $this->context('title', true))) ?>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?= $this->tag('meta', ['name'=>'description','content'=>$this->meta('description')]) ?>
   <?= $this->tag('meta', ['name'=>'author','content'=>$this->meta('author')]) ?>
