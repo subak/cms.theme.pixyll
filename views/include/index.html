@@ -10,7 +10,7 @@
       <? }, $this->entry_uri($id), ['class' => 'post-link'], ['id' => $id]) ?>
 
       <article class="post-content">
-        <?= $this->entry_body($id, ['excerpt' => $this->context('excerpt')]) ?>
+        <?= $this->entry_body($id, ['excerpt' => $this->entry_context($id)->get('excerpt')]) ?>
       </article>
     </div>
 
