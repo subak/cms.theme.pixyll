@@ -1,3 +1,5 @@
+<?= $this->include() ?>
+
 <div class="post-header mb2">
   <?= $this->tag('h1', $this->entry_title($this->id())) ?>
   <?= $this->tag('span', $this->created()->format('Y-m-d'), ['class' => 'post-meta']) ?>
