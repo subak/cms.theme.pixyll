@@ -10,6 +10,19 @@
   <!--</span>-->
 </div>
 
+<div>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- ブログ -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-0197736592215392"
+       data-ad-slot="3397251058"
+       data-ad-format="auto"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
 <article class="post-content">
   <?= $this->entry_body($this->id()) ?>
 </article>
